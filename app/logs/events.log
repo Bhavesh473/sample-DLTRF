@@ -1,0 +1,2 @@
+{"timestamp":"2025-08-13T15:40:03Z","event_type":"http_request","user_id":null,"payload":{"path":"/","method":"GET","args":{},"json":null}}
+{"timestamp":"2025-08-13T15:40:03Z","event_type":"hello_page_viewed","user_id":null,"payload":{"message":"Hello from Docker and Flask!"}}
