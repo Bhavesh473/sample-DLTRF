@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome, {{ user.name }}!</h1>
+    <p>Email: {{ user.email }}</p>
+    {% if user.provider %}
+      <p>Signed in via: {{ user.provider }}</p>
+    {% else %}
+      <p>Gender: {{ user.gender }}, Profession: {{ user.profession }}</p>
+    {% endif %}
+    <a href="{{ url_for('logout') }}" class="btn-logout">Sign Out</a>
+  </div>
+</body>
+</html>
